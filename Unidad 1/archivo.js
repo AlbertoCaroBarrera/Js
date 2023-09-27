@@ -221,7 +221,7 @@ console.log("La media es: " ,media)
 */
 
 // Diseñar un programa que, dada una cierta cantidad de dinero que se leerá desde la entrada estándar, calcule cuál es el número mínimo de monedas de curso legal que equivalen a dicha cantidad de dinero.
-
+/*
 let cantidad=304.2;
 let monedadoble;
 let monedasimple;
@@ -234,7 +234,7 @@ let moneda1=0;
 
 monedadoble= parseInt(parseInt(cantidad)/2)
 monedasimple=parseInt(cantidad)%2
-cantidad=cantidad-Math.floor(cantidad)
+cantidad=cantidad%1
 if (cantidad>=0.50){
     moneda50++
     cantidad -= 0.5
@@ -258,3 +258,75 @@ while (cantidad>=0.02){
 moneda1 = cantidad
 
 console.log("monedas de 2 euros: ",monedadoble,"\nmonedas de 1 euro: ",monedasimple,"\nmonedas de 50 centimos",moneda50,"\nmoneda 20 centimos:",moneda20,"\nmoneda de 10 centimos: ", moneda10,"\nmoneda 5 centimos: ",moneda5,"\nmoneda 2 centimos",moneda2,"\nmoneda 1 centimo")
+*/
+
+// Diseñar un programa que lea de teclado un número entero positivo en base 10 y escriba su correspondiente representación binaria usando la técnica de divisiones sucesivas. 
+/*
+let numero = 151;
+let valor = "";
+while (numero != 0 & numero != 1) {
+    valor = valor + (numero%2) ;
+    numero = Math.trunc(numero / 2);
+}
+console.log(valor)*/
+
+// Escribe un algoritmo que lea desde la entrada estándar dos fechas dadas por día, mes y año y calcule cuál de ellas es anterior a la otra. 
+/*
+let dia1 = 15;
+let mes1 = 12;
+let año1 = 1994;
+let dia2 = 12;
+let mes2 = 5;
+let año2 = 1994;
+
+if (año1 > año2){
+    console.log("la mayor es",dia1,mes1,año1);
+} else if (año1 < año2) {
+    console.log("la mayor es",dia2,mes2,año2);
+} else {
+    if (mes1 > mes2){
+        console.log("la mayor es",dia1,mes1,año1);
+    } else if (mes1 < mes2) {
+        console.log("la mayor es",dia2,mes2,año2);
+    } else {
+        if (dia1 > dia2){
+            console.log("la mayor es",dia1,mes1,año1);
+        } else if (dia1 < dia2) {
+            console.log("la mayor es",dia2,mes2,año2);
+        } else {
+            console.log("Fechas iguales")
+        }
+
+    }
+}
+*/
+
+// Realiza un algoritmo que solicite del usuario un tiempo dado en segundos y calcule y presente en pantalla dicho tiempo pero expresado en horas, minutos y segundos.
+
+/*
+
+let horas=0;
+let minutos=0;
+let segundos = 24394;
+
+while (segundos>= 3600){
+    horas++;
+    segundos -= 3600;
+}
+while (segundos >=60){
+    minutos++;
+    segundos -= 60;
+}
+console.log("horas:",horas,"minutos:",minutos,"segundos:",segundos)
+*/
+
+// Diseña un algoritmo para simular el juego de ¿dónde está la bolita? (trile), famoso timo practicado por los llamados trileros .En nuestro caso el ordenador será un honrado trilero que no engañará al usuario que juegue con él.
+
+
+
+
+
+
+
+
+
