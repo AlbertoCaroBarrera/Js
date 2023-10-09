@@ -144,15 +144,15 @@ if (codigoPostal <= 52999 & codigoPostal >=0 & codigoPostal.length == 5) {
 */
 
 // Valida con una expresión regular el horario de formato de 24 hrs, por ejemplo 14:45 o 08:12.
-/* Falta pulirla
-horario = "22:45"
-expReg = /([2][0-3]|[0-1][0-9]):[0-5][0-9]/
+
+horario = "23:59"
+expReg = /\b([2][0-3]|[0-1][0-9]):[0-5][0-9]\b/
 if (expReg.test(horario)){
     console.log(true)
 } else {
     console.log(false)
 }
-*/
+
 
 // Los números pueden tener entre 1 y 3 dígitos. Solicita el ingreso de la cordenada de un punto. El formato a ingresar por teclado es (999,999)
 
