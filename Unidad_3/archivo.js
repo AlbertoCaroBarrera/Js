@@ -228,7 +228,7 @@ console.log(ecuacion)
 ➔ 30% para que salga x
 ➔ 20% para que salga 2
 */
-
+/*
 var columnas = 9;
 var lista = new Array();
 while (columnas > 0) { 
@@ -244,6 +244,116 @@ while (columnas > 0) {
     columnas --;
 }
 console.log(lista)
-
+*/
 
 // Generar aleatoriamente una primitiva de n columnas.
+/*
+var columna = 7;
+while (columna > 0) {
+    let aleatorio = Math.ceil(Math.random()*100);
+    console.log(aleatorio);
+    columna--;
+}
+
+*/
+
+// Realizar un programa que generalice el algoritmo del Tarot para un número de cualquier cantidad de cifras. Ejemplo: 999999999999999999999=9+.....9+9+9= 189 = 18 = 9.  (Pista: Usar log en base 10. No es obligatorio usarla)
+
+/* NO SALE
+var numero = 999999999999999999999;
+var tarot = 0;
+var cadena = String(numero);
+
+tarot += parseInt(cadena.slice(-1));
+numero = parseInt(cadena.substring(0, cadena.length - 1) );
+    
+console.log(tarot)
+*/
+
+// Hacer el Tarot que comprueba que la fecha de nacimiento, introducida no es mayor que la actual.
+/*
+fecha_nacimiento = new Date("05-02-1994")
+fecha_actual = new Date()
+
+if (fecha_actual > fecha_nacimiento) {
+    console.log(true)
+}
+else{
+    console.log(false)
+}
+*/
+
+//Escribe un algoritmo que lea desde la entrada estándar dos fechas dadas por día, mes y año y calcule cuál de ellas es anterior a la otra.
+/*
+fecha1 = new Date("12-02-1991")
+fecha2 = new Date("12-12-1996")
+
+if (fecha1 > fecha2) {
+    console.log(fecha2,"es la fecha mas antigua")
+} else {
+    console.log(fecha1, "es la fecha mas antigua")
+}
+*/
+
+// Solicitar al usuario el tiempo en segundos
+/*
+var segundosTotales = parseInt(prompt("Ingresa el tiempo en segundos:"));
+var horas = Math.floor(segundosTotales / 3600);
+var minutos = Math.floor((segundosTotales % 3600) / 60);
+var segundos = segundosTotales % 60;
+
+console.log("Horas: " + horas + "Minutos: " + minutos + "Segundos: " + segundos);
+*/
+/*
+var fechas = [
+    new Date("2023-01-15"),
+    new Date("2023-03-20"),
+    new Date("2023-05-10"),
+    new Date("2023-02-01")
+  ];
+  
+
+var fechaMenor = new Date(Math.min(...fechas));
+var fechaMayor = new Date(Math.max(...fechas));
+
+
+var diferenciaEnSegundos = (fechaMayor - fechaMenor) / 1000;
+
+
+console.log("Fecha Menor: " + fechaMenor);
+console.log("Fecha Mayor: " + fechaMayor);
+console.log("Diferencia en Segundos: " + diferenciaEnSegundos + " segundos");
+*/
+
+/*
+var fechaCumpleaños = new Date(prompt("Ingresa tu fecha de cumpleaños (YYYY-MM-DD):"));
+var fechaActual = new Date();
+var proximoCumpleaños = new Date(fechaActual.getFullYear(), fechaCumpleaños.getMonth(), fechaCumpleaños.getDate());
+var diferenciaEnDias = Math.ceil((proximoCumpleaños - fechaActual) / (1000 * 60 * 60 * 24));
+if (proximoCumpleaños < fechaActual) {
+    console.log("Tu cumpleaños ya ha sido este año!");
+} else 
+{
+    if (diferenciaEnDias == 0) {
+        console.log("¡Felicidades! Hoy es tu cumpleaños.");
+    } else {
+        console.log("Faltan " + diferenciaEnDias + " días para tu próximo cumpleaños.");
+    }
+}
+*/
+
+// Realizar un programa que calcule los días de la semana en que caerán los próximos 50 cumpleaños del usuario.
+/*
+var fechaCumpleaños = new Date("1994-02-05");
+var numero = 0;
+var diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+while (numero < 50) {
+
+    var proximoCumpleaños = new Date(new Date().getFullYear(),fechaCumpleaños.getMonth(),fechaCumpleaños.getDate());
+    proximoCumpleaños.setFullYear(proximoCumpleaños.getFullYear() + numero);
+    var diaSemana = proximoCumpleaños.getDay();
+    console.log("Cumpleaño: " + (numero + 1) + ": " + proximoCumpleaños.toDateString() + " (" + diasSemana[diaSemana] + ")");
+    numero++;
+}
+*/
