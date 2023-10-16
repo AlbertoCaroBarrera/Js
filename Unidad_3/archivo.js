@@ -384,7 +384,7 @@ document.write('javaEnabled() :' + navigator.javaEnabled() + '<br>');
 */
 
 // Escribir un script que mostrará el nombre del navegador , la versión y el sistema operativo que esté utilizando. Prueba tu programa en distintos navegadores, el objeto Navigator no está estandarizado.
-/*
+
 document.write('appName :' + navigator.appName + '<br>');
 document.write('appVersion :' + navigator.appVersion + '<br>');
 
@@ -408,10 +408,10 @@ function retornarSO()
 }
 document.write(retornarSO())
 
-*/
+
 
 // Crear dos enlaces, uno para abrir una nueva ventana y uno para cerrarla. La nueva ventana mostrará este mensaje en una fuente grande : ​”El ojo es la ventana a tu alma “. La nueva ventana se coloca en la esquina izquierda de la pantalla , será redimensionable , tendrá una barra de desplazamiento, y estará en primer plano.
-/* Por defecto ya es 
+
 function inicializar(){
     document.getElementById("crear-ventana").onclick=crearNueva;
     document.getElementById("cerrar-ventana").onclick=cerrarNueva;
@@ -427,4 +427,3 @@ function cerrarNueva(){
         nuevaVentana = null;
     }
 }
-*/
