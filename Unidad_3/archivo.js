@@ -310,8 +310,8 @@ var fechas = [
     new Date("2023-03-20"),
     new Date("2023-05-10"),
     new Date("2023-02-01")
-  ];
-  
+];
+
 
 var fechaMenor = new Date(Math.min(...fechas));
 var fechaMayor = new Date(Math.max(...fechas));
@@ -355,5 +355,76 @@ while (numero < 50) {
     var diaSemana = proximoCumpleaños.getDay();
     console.log("Cumpleaño: " + (numero + 1) + ": " + proximoCumpleaños.toDateString() + " (" + diasSemana[diaSemana] + ")");
     numero++;
+}
+*/
+
+// En una nueva ventana, imprimir todas las propiedades del objeto navigator.
+
+/*
+appName : almacena el nombre oficial del navegador.
+appCodeName : devuelve el nombre de código de la aplicación del navegador:
+appVersion : almacena la versión del navegador.
+cookieEnabled : almacena si las cookies están activas en el navegador.
+platform : almacena la plataforma donde el navegador se está ejecutando.
+plugins : almacena un array de los plugin cargados en el navegador.
+language devuelve el idioma del navegador.
+onLine devuelve verdadero si el navegador está en línea.
+javaEnabled() método devuelve verdadero si Java está habilitado.
+*/
+/*
+document.write('Valores de las propiedades del objeto navigator:<br>');
+document.write('appName :' + navigator.appName + '<br>');
+document.write('appCodeName :' + navigator.appCodeName + '<br>');
+document.write('appVersion :' + navigator.appVersion + '<br>');
+document.write('cookieEnabled :' + navigator.cookieEnabled + '<br>');
+document.write('plugins :' + navigator.plugins.length + '<br>');
+document.write('language :' + navigator.language + '<br>');
+document.write('onLine :' + navigator.onLine + '<br>');
+document.write('javaEnabled() :' + navigator.javaEnabled() + '<br>');
+*/
+
+// Escribir un script que mostrará el nombre del navegador , la versión y el sistema operativo que esté utilizando. Prueba tu programa en distintos navegadores, el objeto Navigator no está estandarizado.
+/*
+document.write('appName :' + navigator.appName + '<br>');
+document.write('appVersion :' + navigator.appVersion + '<br>');
+
+var navInfo = window.navigator.appVersion.toLowerCase();
+var so = 'Sistema Operativo';
+function retornarSO()
+{
+	if(navInfo.indexOf('win') != -1)
+	{
+		so = 'Windows';
+	}
+	else if(navInfo.indexOf('linux') != -1)
+	{
+		so = 'Linux';
+	}
+	else if(navInfo.indexOf('mac') != -1)
+	{
+		so = 'Macintosh';
+	}
+	return so
+}
+document.write(retornarSO())
+
+*/
+
+// Crear dos enlaces, uno para abrir una nueva ventana y uno para cerrarla. La nueva ventana mostrará este mensaje en una fuente grande : ​”El ojo es la ventana a tu alma “. La nueva ventana se coloca en la esquina izquierda de la pantalla , será redimensionable , tendrá una barra de desplazamiento, y estará en primer plano.
+/* Por defecto ya es 
+function inicializar(){
+    document.getElementById("crear-ventana").onclick=crearNueva;
+    document.getElementById("cerrar-ventana").onclick=cerrarNueva;
+}
+var nuevaVentana;
+function crearNueva(){
+    nuevaVentana = window.open("archivo.html","","height=400,width=800");
+}
+
+function cerrarNueva(){
+    if (nuevaVentana){
+        nuevaVentana.close(); 
+        nuevaVentana = null;
+    }
 }
 */
