@@ -254,8 +254,8 @@ while (columna > 0) {
     console.log(aleatorio);
     columna--;
 }
-
 */
+
 
 // Realizar un programa que generalice el algoritmo del Tarot para un número de cualquier cantidad de cifras. Ejemplo: 999999999999999999999=9+.....9+9+9= 189 = 18 = 9.  (Pista: Usar log en base 10. No es obligatorio usarla)
 
@@ -343,7 +343,7 @@ if (proximoCumpleaños < fechaActual) {
 */
 
 // Realizar un programa que calcule los días de la semana en que caerán los próximos 50 cumpleaños del usuario.
-/*
+
 var fechaCumpleaños = new Date("1994-02-05");
 var numero = 0;
 var diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
@@ -356,7 +356,7 @@ while (numero < 50) {
     console.log("Cumpleaño: " + (numero + 1) + ": " + proximoCumpleaños.toDateString() + " (" + diasSemana[diaSemana] + ")");
     numero++;
 }
-*/
+
 
 // En una nueva ventana, imprimir todas las propiedades del objeto navigator.
 
