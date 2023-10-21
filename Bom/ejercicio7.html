@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Animado Circular</title>
+</head>
+<body>
+    <script>
+        let titleText = "¡¡Sólo quedan 20 días de ofertas!!";
+        let titleIndex = 0;
+
+        function animarTitulo() {
+            document.title = titleText.substring(titleIndex) + titleText.substring(0, titleIndex);
+            titleIndex = (titleIndex + 1) % titleText.length;
+        }
+
+        // Inicia la animación del título
+        const intervalId = setInterval(animarTitulo, 200); // Cambia cada 200 milisegundos
+
+        // Detén la animación después de 10 segundos (ajusta según tus necesidades)
+        setTimeout(function() {
+            clearInterval(intervalId);
+        }, 10000); // Detener después de 10 segundos
+    </script>
+</body>
+</html>
