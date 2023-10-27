@@ -343,7 +343,7 @@ if (proximoCumpleaños < fechaActual) {
 */
 
 // Realizar un programa que calcule los días de la semana en que caerán los próximos 50 cumpleaños del usuario.
-
+/*
 var fechaCumpleaños = new Date("1994-02-05");
 var numero = 0;
 var diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
@@ -356,7 +356,7 @@ while (numero < 50) {
     console.log("Cumpleaño: " + (numero + 1) + ": " + proximoCumpleaños.toDateString() + " (" + diasSemana[diaSemana] + ")");
     numero++;
 }
-
+*/
 
 // En una nueva ventana, imprimir todas las propiedades del objeto navigator.
 
