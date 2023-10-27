@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ventana Flotante</title>
+</head>
+<body>
+    <button onclick="moverAbsoluto()">Mover Absoluto (500, 150)</button>
+    <button onclick="moverRelativo()">Mover Relativo (0, 50)</button>
+    <button onclick="redimensionarAbsoluto()">Redimensionar Absoluto (500, 500)</button>
+    <button onclick="redimensionarRelativo()">Redimensionar Relativo (-50, -50)</button>
+
+    <script>
+        function moverAbsoluto() {
+            window.moveTo(500, 150);
+        }
+
+        function moverRelativo() {
+            window.moveBy(0, 50);
+        }
+
+        function redimensionarAbsoluto() {
+            window.resizeTo(500, 500);
+        }
+
+        function redimensionarRelativo() {
+            window.resizeBy(-50, -50);
+        }
+    </script>
+</body>
+</html>
