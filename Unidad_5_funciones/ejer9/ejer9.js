@@ -42,17 +42,3 @@ var sumaArgPares = function(...numeros){
 
 console.log(sumaArgPares(1,2,3,4))
 console.log(sumaArgPares(1,2,6))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
