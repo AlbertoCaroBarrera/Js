@@ -40,26 +40,3 @@ var sumaArgPares = (...lista)=> lista.filter((val)=>val%2==0).map((val)=>val*2);
 
 console.log(sumaArgPares(1,2,3,4,5,6))
 
-//  Dada una cadena leída por teclado, realizar un programa que extraiga los números que aparecen en dicha secuencia e imprima por pantalla dichos números y su suma. 
-
-var extraeNum = (cadena) => {
-    var suma = 0;
-    var lista = []
-    for (var x=0;x<cadena.length;x++){
-        lista.push(cadena[x])
-    }
-
-    lista = lista.map((val)=>parseInt(val))
-
-    console.log(lista)
-
-    for (valor of lista){
-        if (typeof valor=='number'){
-            suma += valor
-        }
-    }
-
-    return suma
-}
-
-console.log(extraeNum("a2a3jdjgfh9"))
