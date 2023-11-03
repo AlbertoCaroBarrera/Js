@@ -65,7 +65,7 @@ var modificaDatos = (tipo_dato,dato,dni,matriz) => {
         return "tipo de dato incorrecto"
     }
 
-    return matriz
+    //return matriz
 }
 
 // imprimir(modificaDatos("nombre","antonio","30303030F",pedirdatos()))
@@ -82,7 +82,7 @@ var eliminaUsuario = (dni,matriz)=> {
     if (variable == 1){
         matriz.splice(indice_persona_matriz,1);
     }
-    return matriz
+    //return matriz
 
 }
 

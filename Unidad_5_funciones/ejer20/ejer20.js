@@ -15,14 +15,14 @@ var imprimir = (lista)=>{
 
 
 var buscar_persona_apellidos = (apellidos,matriz) => matriz.find((persona)=>persona[1]==apellidos)
-    
+
 
 
 var buscar_persona_dni = (dni,matriz) => matriz.find((persona)=>persona[2]==dni)
     
 function calcular_edad(cadena){
     const fecha = Date.parse(new Date());
-    return Math.floor((fecha - Date.parse(cadena))/(1000*60*60*24*365))
+    return Math.floor((fecha - Date.parse(cadena))/(1000*60*60*24*365.25))
 }
 // solo imprime la primera persona que encuentra con esa edad
 var buscar_persona_edad = (edad,matriz) => {
