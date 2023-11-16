@@ -8,7 +8,7 @@ var imprimir = (lista)=>{
             imprimir(i)
         }else if (typeof i !== 'object'){
             document.write(i+'<br>')
-        }
+        }           
     }
 }
 
