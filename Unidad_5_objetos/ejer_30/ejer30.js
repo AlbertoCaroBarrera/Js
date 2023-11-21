@@ -27,6 +27,5 @@ var ordenar_tiempo=(lista)=>{
     }
     lista.sort(compareNumbers)
 }
-var ordenar_nombre=(lista)=>{
-    lista.sort((a, b) => a.piloto.nombre.localeCompare(b.piloto.nombre));
-}
+
+var ordenar_nombre=(lista)=> lista.sort((a, b) => a.piloto.nombre.localeCompare(b.piloto.nombre));
