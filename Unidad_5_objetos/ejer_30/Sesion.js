@@ -3,4 +3,7 @@ class Sesion{
         this.piloto = piloto
         this.tiempo = tiempo
     }
+    modificar(t){
+        this.tiempo = t
+    }
 }
