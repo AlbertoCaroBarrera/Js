@@ -25,16 +25,23 @@ En el archivo html realiza una prueba donde se compruebe el funcionamiento del o
 
 //c1 = new Cancion("Por una cabeza","Carlos Gardel")
 //c2 = new Cancion("A Perfect Day","Lou Reed")
-//c3 = new Cancion("Titulo cancion","Interprete cancion")
+c3 = new Cancion("Titulo cancion","Interprete cancion")
 
 //r = new Reproductor([c1,c2])
 
 
 var lista = []
-c = ""
-while (c!="salir")
+var c = prompt("Introduce un titulo y su interprete, por ejemplo: (A Perfect Day, Lou Reed),(Por una cabeza,Carlos Gardel)")
+
+while (c!="salir"){
+    let letra = c.split(",")
+    var cancion = new Cancion(letra[0],letra[1])
+    lista.push(cancion)
     c = prompt("Introduce un titulo y su interprete, por ejemplo: (A Perfect Day, Lou Reed),(Por una cabeza,Carlos Gardel)")
-    lista.push(c)
+}
+    
+console.log(lista)
+
 var r = new Reproductor(lista)
 
 

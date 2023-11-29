@@ -38,8 +38,14 @@ class Reproductor{
         }
         return cadena
     }
+    mostrarLista2(){
+        var cadena = ""
+        this.canciones.forEach((cancion)=>cadena += cancion.mostrarCancion()+"<br>" )
+        return cadena
+    }
     ordenarCancionDesc(){
         this.canciones.sort((a,b)=>a.titulo.localeCompare(b.titulo))
     }
 
 }
+
