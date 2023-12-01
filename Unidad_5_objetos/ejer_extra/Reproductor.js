@@ -45,6 +45,7 @@ class Reproductor{
     }
     ordenarCancionDesc(){
         this.canciones.sort((a,b)=>a.titulo.localeCompare(b.titulo))
+        
     }
 
 }
