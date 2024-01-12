@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formulario.js" defer></script>
+    <title>Formulario de Nombre en Mayúsculas</title>
+</head>
+<body>
+
+<h1>Formulario de Nombre en Mayúsculas</h1>
+
+<form id="formularioNombre" action="/tu-programa-servidor" method="post">
+    <label for="nombre">Nombre en Mayúsculas:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre en mayúsculas" required pattern="[A-Z]+" title="Ingrese solo letras mayúsculas">
+    <br>
+    <input type="image" src="boton_envio.png" alt="Enviar">
+</form>
+
+</body>
+</html>
