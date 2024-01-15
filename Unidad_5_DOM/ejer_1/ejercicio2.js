@@ -4,8 +4,6 @@ function inicializar(){
     
 }
 
-
-
 let ventanaFlotante;
 
 function abrirVentana() {
