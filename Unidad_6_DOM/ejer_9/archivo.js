@@ -17,7 +17,7 @@ function inicializar() {
     for (obj of json) {
         let li = document.createElement("li")
         let img = document.createElement("img")
-        img.setAttribute('src',obj.src)
+        img.setAttribute('src', obj.src)
         let p = document.createElement("p")
         let txt2 = document.createTextNode(obj.desc)
         p.appendChild(txt2)
@@ -36,10 +36,27 @@ function inicializar() {
     }
     primer_div.appendChild(primer_ul)
 
+<<<<<<< HEAD
     document.getElementsByTagName("img").addEventListener("click",ocultar)
 
     function ocultar(e){
         console.log(e.currentTarjet)
-    }
+=======
+    var imagenes = document.getElementsByTagName("img");
 
+    for (var i = 0; i < imagenes.length; i++) {
+        imagenes[i].addEventListener("click", function (e) {
+            let imagen = e.currentTarget
+            let padre = imagen.parentElement
+            let hermanos = [...padre.children].filter((elemento)=>elemento !== imagen)
+            for (let hermano of hermanos){
+                if (hermano.style.display!="none"){
+                    hermano.style.display = "none"
+                } else {
+                    hermano.style.display = "block"
+                }
+            }
+        })
+>>>>>>> 788e8d5a7b5546154ea36750e29256c3d9b14346
+    }
 }
