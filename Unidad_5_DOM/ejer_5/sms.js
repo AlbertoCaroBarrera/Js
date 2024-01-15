@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 
     // Agregar el evento submit al formulario
     document.getElementById("smsForm").addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar que el formulario se envíe realmente (para este ejemplo)
+
         alert("SMS enviado correctamente");
     });
 

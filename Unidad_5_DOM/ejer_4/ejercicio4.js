@@ -10,7 +10,7 @@ var elementocorrecto = document.getElementById("resultado")
 var elementos = document.getElementsByTagName("input")
 elementos = [...elementos]
 var elemento = elementos.find((elemento)=>elemento.value=2)
-elemento.addEventListener('click',correcto)
+
 
 //var elemento = document.getElementById("2")
 

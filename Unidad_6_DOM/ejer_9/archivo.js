@@ -40,8 +40,6 @@ function inicializar() {
 
     function ocultar(e){
         console.log(e.currentTarjet)
-
-
     }
 
 }
