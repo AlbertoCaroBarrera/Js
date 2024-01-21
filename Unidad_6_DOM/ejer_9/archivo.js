@@ -36,12 +36,6 @@ function inicializar() {
     }
     primer_div.appendChild(primer_ul)
 
-<<<<<<< HEAD
-    document.getElementsByTagName("img").addEventListener("click",ocultar)
-
-    function ocultar(e){
-        console.log(e.currentTarjet)
-=======
     var imagenes = document.getElementsByTagName("img");
 
     for (var i = 0; i < imagenes.length; i++) {
@@ -57,6 +51,5 @@ function inicializar() {
                 }
             }
         })
->>>>>>> 788e8d5a7b5546154ea36750e29256c3d9b14346
     }
 }
